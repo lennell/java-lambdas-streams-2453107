@@ -1,6 +1,6 @@
 package com.example;
 
 @FunctionalInterface
-public interface Greeting {
-    void sayHello();
+public interface Greeting<T> {
+    void sayHello(T t);
 }
