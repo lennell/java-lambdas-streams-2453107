@@ -21,8 +21,11 @@ public class Main {
     shoppingList.add("milk");
     shoppingList.add("pasta");
     Stream<String> shoppingListStream = shoppingList.stream();
-    shoppingListStream.sorted()
-            .forEach(item -> System.out.println(item));
+    /*shoppingListStream.sorted().map(String::toUpperCase)
+            .filter( s -> s.startsWith("P"))
+            .forEach( item -> System.out.println(item) );*/
+
+
 
   }
 }
